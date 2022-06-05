@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test.only('Validate icon counter', async ({ page }) => {
+test('Validate icon counter', async ({ page }) => {
     
     // Part 1 - Login
     await page.goto('https://www.saucedemo.com/');
