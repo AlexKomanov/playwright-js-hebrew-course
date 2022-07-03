@@ -8,7 +8,6 @@ test('Validate icon counter', async ({ page }) => {
     await page.locator('[id="login-button"]').click();
     await expect(page.locator('.title')).toContainText('Products');
 
-    await page.pause();
     await page.locator('[class="inventory_item_description"]', {hasText: 'Sauce Labs Backpack'})
     .locator('button')
     .click();
