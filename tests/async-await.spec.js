@@ -13,7 +13,7 @@ test('Test Title', async ({page}) => {
     // await 5 Validation
     // async await 
 
-    await page.pause();
+    //await page.pause();
     await page.goto('https://www.saucedemo.com/');
     await page.locator('#user-name').type('standard_user', { delay: 50 });
     await page.locator('#password').type('secret_sauce', {delay: 50});
