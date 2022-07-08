@@ -20,18 +20,4 @@ test('Test Title', async ({page}) => {
     await expect(page.locator('.title')).toContainText('Products');
 })
 
-test('Test', async ({}) => {
-    const browser = await webkit.launch();
-    const context = await browser.newContext({viewport: {width: 1500, height: 900}}); // Btowser context with capabilities
-    const page = await context.newPage(); // New fresh page of browser
 
-    await page.goto('https://www.saucedemo.com/');
-
-    await page.waitForTimeout(2000);
-
-    /**
-     * Chrome - plugins + cookies
-     * We can create directly the page with page fixture if we need
-     * some default page
-    */
-})
