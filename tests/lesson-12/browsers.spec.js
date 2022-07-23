@@ -2,9 +2,9 @@
 // context - browser context (cookies / extensions)
 // page - tab of the browser
 
-const { test, chromium, firefox, webkit } = require("@playwright/test");
+import { test, chromium, firefox, webkit } from "@playwright/test";
 
-test.describe.only("Browsers Tests", () => {
+test.describe("Browsers Tests", () => {
 
     test('Chromium Test', async() => {
 

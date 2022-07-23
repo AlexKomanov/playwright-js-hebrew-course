@@ -1,15 +1,12 @@
 import { test, expect } from '@playwright/test';
 
-test('Login Test', async ({ page }) => {
 
-    
+test('Login with standard_user', async({page}) => {
     await page.goto('https://www.saucedemo.com/');
     await page.locator('#user-name').type('standard_user', { delay: 50 });
     await page.locator('#password').fill('secret_sauce');
     await page.locator('[id="login-button"]').click();
-
-    //After Login
     await expect(page.locator('.title')).toContainText('Products');
 
-    // await page.waitForTimeout(3000);
-})
+    await page.waitForTimeout(2000);
+});
