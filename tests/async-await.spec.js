@@ -1,4 +1,4 @@
-const {test, expect, firefox, chromium, webkit} = require('@playwright/test');
+import {test, expect, firefox, chromium, webkit} from '@playwright/test';
 
 test.afterEach(async({page}) => {
     // await page.screenshot({path: 'asyncscreenshot.jpg'});
