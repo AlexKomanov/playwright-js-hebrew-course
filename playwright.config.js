@@ -1,43 +1,70 @@
 // @ts-check
 
+import { devices } from '@playwright/test';
+
 /**
  * @see https://playwright.dev/docs/test-configuration
  * @type {import('@playwright/test').PlaywrightTestConfig}
  */
- const config  = {
+const config = {
 
-    testDir: './tests',
+  projects: [
+    {
+      name: 'Google Chrome',
+      use:
+      {
+        ...devices['Desktop Chrome']
+        , channel: 'chrome'
+      },
 
-    /* Maximum time one test can run for. */
-    timeout: 60 * 1000,
-    globalTimeout: 240000,
-
-    expect: {
-      /**
-       * Maximum time expect() should wait for the condition to be met.
-       * For example in `await expect(locator).toHaveText();`
-       */
-      timeout: 10000
     },
-    
-    reporter: 'html',
-
-    /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-    use: {
-      headless: false,
-      browserName: 'chromium',
-      channel: 'chrome',
-      screenshot: "on",
-      video: "on",
-      viewport: {
+    {
+      name: 'Microsoft Edge',
+      use: {
+        ...devices['Desktop Edge'],
+        channel: 'msedge'
+      },
+    },
+  ],
+  timeout: 240000,
+  globalTimeout: 18000000,
+  testDir: "./tests",
+  reporter: [
+    ["list"],
+    ["junit", { outputFile: "reports/test-results.xml" }],
+    ["json", { outputFile: "reports/test-results.json" }],
+    ["html", { open: "never" }],
+  ],
+  use: {
+    browserName: "chromium",
+    actionTimeout: 30000,
+    trace: "off",
+    screenshot: "on",
+    viewport: { width: 1400, height: 900 },
+    video: {
+      mode: "retain-on-failure",
+      size: {
+        //Like in our project
         width: 1400,
-        height: 900
-      }
+        height: 900,
+      },
     },
-    
-  
-  };
-  
-  export default config;
+    contextOptions: {
+      ignoreHTTPSErrors: true,
+    },
+    // Browser options
+    launchOptions: {
+      channel: "chrome",
+      slowMo: 200,
+      args: [
+        "--no-sandbox",
+        "--ignore-certificate-errors",
+        "--ignore-certificate-errors-skip-list",
+      ],
+    },
+  },
+};
+
+export default config;
 
 

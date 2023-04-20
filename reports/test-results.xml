@@ -1,0 +1,13 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="4.197603999972343">
+<testsuite name="version-1.32-ui-mode/ui-mode.spec.js" timestamp="2023-04-11T09:37:38.322Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="3.585" errors="0">
+<testcase name="UI Mode Describe › test ui mode failed" classname="version-1.32-ui-mode/ui-mode.spec.js" time="3.585">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/version-1.32-ui-mode-ui-mode-UI-Mode-Describe-test-ui-mode-failed-Google-Chrome/trace.zip]]
+
+[[ATTACHMENT|../test-results/version-1.32-ui-mode-ui-mode-UI-Mode-Describe-test-ui-mode-failed-Google-Chrome/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

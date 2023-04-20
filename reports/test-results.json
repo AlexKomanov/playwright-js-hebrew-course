@@ -1,0 +1,141 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 18000000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Microsoft Edge",
+        "name": "Microsoft Edge",
+        "testDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 240000
+      }
+    ],
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/test-results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/playwright.config.js",
+    "rootDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.32.3",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "version-1.32-ui-mode/ui-mode.spec.js",
+      "file": "version-1.32-ui-mode/ui-mode.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI Mode Describe",
+          "file": "version-1.32-ui-mode/ui-mode.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test ui mode failed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "passed",
+                      "duration": 3585,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-04-11T09:37:38.511Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results/version-1.32-ui-mode-ui-mode-UI-Mode-Describe-test-ui-mode-failed-Google-Chrome/trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results/version-1.32-ui-mode-ui-mode-UI-Mode-Describe-test-ui-mode-failed-Google-Chrome/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "159b9576e841c61d147c-03dded7f9d85c41b34fb",
+              "file": "version-1.32-ui-mode/ui-mode.spec.js",
+              "line": 34,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
