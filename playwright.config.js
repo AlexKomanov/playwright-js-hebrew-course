@@ -19,10 +19,9 @@ const config = {
 
     },
     {
-      name: 'Microsoft Edge',
+      name: 'Firefox',
       use: {
-        ...devices['Desktop Edge'],
-        channel: 'msedge'
+        ...devices['Desktop Firefox'],
       },
     },
   ],
@@ -33,7 +32,7 @@ const config = {
     ["list"],
     ["junit", { outputFile: "reports/test-results.xml" }],
     ["json", { outputFile: "reports/test-results.json" }],
-    ["html", { open: "never" }],
+    // ["html", { open: "never" }],
   ],
   use: {
     browserName: "chromium",
@@ -45,8 +44,8 @@ const config = {
       mode: "retain-on-failure",
       size: {
         //Like in our project
-        width: 1400,
-        height: 900,
+        width: 1920,
+        height: 1080,
       },
     },
     contextOptions: {

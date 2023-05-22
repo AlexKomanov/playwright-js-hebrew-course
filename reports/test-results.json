@@ -1,5 +1,7 @@
 {
   "config": {
+    "configFile": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/playwright.config.js",
+    "rootDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -10,34 +12,6 @@
     "maxFailures": 0,
     "metadata": {},
     "preserveOutput": "always",
-    "projects": [
-      {
-        "outputDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "Google Chrome",
-        "name": "Google Chrome",
-        "testDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/?(*.)@(spec|test).*"
-        ],
-        "timeout": 240000
-      },
-      {
-        "outputDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "Microsoft Edge",
-        "name": "Microsoft Edge",
-        "testDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/?(*.)@(spec|test).*"
-        ],
-        "timeout": 240000
-      }
-    ],
     "reporter": [
       [
         "list",
@@ -54,43 +28,63 @@
         {
           "outputFile": "reports/test-results.json"
         }
-      ],
-      [
-        "html",
-        {
-          "open": "never"
-        }
       ]
     ],
     "reportSlowTests": {
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/playwright.config.js",
-    "rootDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
     "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Firefox",
+        "name": "Firefox",
+        "testDir": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      }
+    ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.32.3",
-    "workers": 4,
+    "version": "1.34.0",
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "version-1.32-ui-mode/ui-mode.spec.js",
-      "file": "version-1.32-ui-mode/ui-mode.spec.js",
+      "title": "version-1-34/exmples.spec.js",
+      "file": "version-1-34/exmples.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "UI Mode Describe",
-          "file": "version-1.32-ui-mode/ui-mode.spec.js",
-          "line": 3,
+          "title": "Error Handling Describe",
+          "file": "version-1-34/exmples.spec.js",
+          "line": 2,
           "column": 6,
           "specs": [
             {
-              "title": "test ui mode failed",
+              "title": "Test Example",
               "ok": true,
               "tags": [],
               "tests": [
@@ -102,24 +96,58 @@
                   "projectName": "Google Chrome",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 3,
                       "status": "passed",
-                      "duration": 3585,
+                      "duration": 6200,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-04-11T09:37:38.511Z",
+                      "steps": [
+                        {
+                          "title": "Navigate to the application",
+                          "duration": 849
+                        },
+                        {
+                          "title": "Enter credentials",
+                          "duration": 1048
+                        },
+                        {
+                          "title": "Validate successfull login",
+                          "duration": 5
+                        },
+                        {
+                          "title": "Add items to basket",
+                          "duration": 675
+                        },
+                        {
+                          "title": "Validate Number of added items",
+                          "duration": 241
+                        },
+                        {
+                          "title": "Perform Checkout",
+                          "duration": 1113
+                        },
+                        {
+                          "title": "Finish Transaction",
+                          "duration": 240
+                        },
+                        {
+                          "title": "Log out from the application",
+                          "duration": 1407
+                        }
+                      ],
+                      "startTime": "2023-05-22T17:52:59.449Z",
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results/version-1.32-ui-mode-ui-mode-UI-Mode-Describe-test-ui-mode-failed-Google-Chrome/trace.zip"
+                          "path": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results/version-1-34-exmples-Error-Handling-Describe-Test-Example-Google-Chrome/trace.zip"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results/version-1.32-ui-mode-ui-mode-UI-Mode-Describe-test-ui-mode-failed-Google-Chrome/test-finished-1.png"
+                          "path": "/Users/alexkomanov/Desktop/PlaywrightProjects/playwright-js-hebrew-course/test-results/version-1-34-exmples-Error-Handling-Describe-Test-Example-Google-Chrome/test-finished-1.png"
                         }
                       ]
                     }
@@ -127,10 +155,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "159b9576e841c61d147c-03dded7f9d85c41b34fb",
-              "file": "version-1.32-ui-mode/ui-mode.spec.js",
-              "line": 34,
-              "column": 5
+              "id": "487d4e92434eada3d33a-7af97e47d68af3d2487e",
+              "file": "version-1-34/exmples.spec.js",
+              "line": 7,
+              "column": 3
             }
           ]
         }
