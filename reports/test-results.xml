@@ -1,13 +1,2 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.989577999830246">
-<testsuite name="version-1-34/exmples.spec.js" timestamp="2023-05-22T17:52:59.267Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="6.2" errors="0">
-<testcase name="Error Handling Describe › Test Example" classname="version-1-34/exmples.spec.js" time="6.2">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/version-1-34-exmples-Error-Handling-Describe-Test-Example-Google-Chrome/trace.zip]]
-
-[[ATTACHMENT|../test-results/version-1-34-exmples-Error-Handling-Describe-Test-Example-Google-Chrome/test-finished-1.png]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
+<testsuites id="" name="" tests="0" failures="0" skipped="0" errors="0" time="0.0008559999999999946">
 </testsuites>

@@ -3,3 +3,5 @@ node_modules/
 /playwright-report/
 /dist-pw/
 .idea
+all-blob-reports
+blob-report

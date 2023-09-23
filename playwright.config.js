@@ -8,6 +8,8 @@ import { devices } from '@playwright/test';
  */
 const config = {
 
+  fullyParallel: true,
+
   projects: [
     {
       name: 'Google Chrome',
@@ -18,12 +20,13 @@ const config = {
       },
 
     },
-    {
-      name: 'Firefox',
-      use: {
-        ...devices['Desktop Firefox'],
-      },
-    },
+
+    // {
+    //   name: 'Firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //   },
+    // }
   ],
   timeout: 240000,
   globalTimeout: 18000000,
@@ -41,7 +44,7 @@ const config = {
     screenshot: "on",
     viewport: { width: 1400, height: 900 },
     video: {
-      mode: "retain-on-failure",
+      mode: "on",
       size: {
         //Like in our project
         width: 1920,
@@ -54,7 +57,7 @@ const config = {
     // Browser options
     launchOptions: {
       channel: "chrome",
-      slowMo: 200,
+      slowMo: 600,
       args: [
         "--no-sandbox",
         "--ignore-certificate-errors",

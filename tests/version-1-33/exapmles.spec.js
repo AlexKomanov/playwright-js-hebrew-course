@@ -34,7 +34,7 @@ test.describe("Version 1.33 Updates Describe", () => {
         await expect(page).toHaveURL(/.*#about/)
     });
 
-    test.only('Assertions Check', async ({ page }) => {
+    test('Assertions Check', async ({ page }) => {
         await page.goto('https://playwright.dev/');
           
         // Expect a title "to contain" a substring.
