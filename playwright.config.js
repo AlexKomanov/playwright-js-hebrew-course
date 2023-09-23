@@ -31,12 +31,8 @@ const config = {
   timeout: 240000,
   globalTimeout: 18000000,
   testDir: "./tests",
-  reporter: [
-    ["list"],
-    ["junit", { outputFile: "reports/test-results.xml" }],
-    ["json", { outputFile: "reports/test-results.json" }],
-    // ["html", { open: "never" }],
-  ],
+  reporter: process.env.CI ? 'blob' : 'html',
+  
   use: {
     browserName: "chromium",
     actionTimeout: 30000,
