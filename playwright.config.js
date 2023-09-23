@@ -31,7 +31,7 @@ const config = {
   timeout: 240000,
   globalTimeout: 18000000,
   testDir: "./tests",
-  reporter: 'html',
+  reporter: process.env.CI ? 'blob' : 'html',
   
   use: {
     browserName: "chromium",
