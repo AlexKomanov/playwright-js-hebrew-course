@@ -12,7 +12,7 @@ const config = {
 
   projects: [
     {
-      name: 'Google Chrome',
+      name: 'Chromium Google Chrome',
       use:
       {
         ...devices['Desktop Chrome']
@@ -22,7 +22,7 @@ const config = {
     },
 
     // {
-    //   name: 'Firefox',
+    //   name: 'Chromium Edge',
     //   use: {
     //     ...devices['Desktop Firefox'],
     //   },
