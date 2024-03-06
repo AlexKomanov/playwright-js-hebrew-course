@@ -5,3 +5,5 @@ node_modules/
 .idea
 all-blob-reports
 blob-report
+.env
+zerostep.config.json
